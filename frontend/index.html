@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUTONAV - Autonomous Navigation</title>
+
+    <!-- Tailwind & Plugins via CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Google Fonts & Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@520;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#3a393a",
+                        "on-secondary-fixed": "#001f23",
+                        "on-surface-variant": "#c6c5d8",
+                        "on-primary-fixed": "#000469",
+                        "primary-fixed-dim": "#bec2ff",
+                        "on-secondary-fixed-variant": "#004f57",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary": "#512300",
+                        "outline-variant": "#454655",
+                        "surface-variant": "#353436",
+                        "on-tertiary-fixed-variant": "#743500",
+                        "on-primary-fixed-variant": "#1f2bc8",
+                        "primary-container": "#7a85ff",
+                        "on-surface": "#e5e2e3",
+                        "tertiary-fixed-dim": "#ffb689",
+                        "background": "#131314",
+                        "on-tertiary-container": "#471e00",
+                        "surface-container": "#201f21",
+                        "inverse-on-surface": "#313031",
+                        "tertiary-fixed": "#ffdbc8",
+                        "on-background": "#e5e2e3",
+                        "tertiary": "#ffb689",
+                        "surface": "#131314",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#003e44",
+                        "surface-tint": "#bec2ff",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#353436",
+                        "surface-dim": "#131314",
+                        "primary-fixed": "#e0e0ff",
+                        "error": "#ffb4ab",
+                        "surface-container-lowest": "#0e0e0f",
+                        "surface-container-high": "#2a2a2b",
+                        "inverse-primary": "#3d4ae0",
+                        "secondary-fixed": "#92f1ff",
+                        "on-primary-container": "#000992",
+                        "secondary-fixed-dim": "#50d8e9",
+                        "on-secondary": "#00363c",
+                        "surface-container-low": "#1c1b1d",
+                        "outline": "#8f8fa1",
+                        "secondary": "#50d8e9",
+                        "primary": "#bec2ff",
+                        "on-tertiary-fixed": "#311300",
+                        "secondary-container": "#00b1c2",
+                        "tertiary-container": "#e0731d",
+                        "inverse-surface": "#e5e2e3",
+                        "on-primary": "#000ba6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "sm": "8px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "xl": "40px",
+                        "margin-safe": "32px",
+                        "gutter": "20px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "mono-data": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "h2": ["'Playfair Display'", "serif"],
+                        "h1": ["'Playfair Display'", "serif"],
+                        "h4": ["'Playfair Display'", "serif"],
+                        "h3": ["'Playfair Display'", "serif"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "mono-data": ["13px", { "lineHeight": "1", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "body-md": ["14px", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.05em", "fontWeight": "520" }],
+                        "h1": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "520" }],
+                        "h4": ["18px", { "lineHeight": "1.4", "letterSpacing": "-0.02em", "fontWeight": "520" }],
+                        "h3": ["24px", { "lineHeight": "1.2", "letterSpacing": "-0.04em", "fontWeight": "520" }]
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+  <body class="bg-background text-on-background min-h-screen flex flex-col md:flex-row overflow-hidden">
+    <div id="root" class="w-full h-full flex overflow-hidden"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
