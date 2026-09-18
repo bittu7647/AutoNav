@@ -30,9 +30,7 @@ The project is built on a high-performance decoupled architecture:
 - **AI / Perception Layer:** PyTorch-based neural networks handling semantic segmentation and confidence/uncertainty scoring.
 
 <div align="center">
-  
-  ![AutoNav System Architecture](docs/system_architecture.jpeg)
-
+  <img src="docs/system_architecture.jpeg" alt="AutoNav System Architecture" width="100%" />
   <p><em>End-to-end system architecture: From raw LiDAR input through Adaptive Foveated 2.5D Mapping to Path Planning & Navigation Control.</em></p>
 </div>
 
@@ -53,19 +51,19 @@ The AutoNav engine delivers exceptional performance on mid-range hardware (Tesla
 *(You can run `python backend/run_performance_test.py` to live-generate these metrics!)*
 
 <div align="center">
-  ![Performance Metrics Chart](docs/metrics_chart.png)
+  <img src="docs/metrics_chart.png" alt="Performance Metrics Chart" width="600" />
 </div>
 
 ## 7. Dashboard Screenshots
 
 <div align="center">
-  ![AutoNav Command Dashboard](docs/dashboard_screenshot.png)
+  <img src="docs/dashboard_screenshot.png" alt="AutoNav Command Dashboard" width="100%" />
   <p><em>AutoNav Command Dashboard — Live 3D map, sensor feeds, obstacle telemetry, elevation statistics, and path planning in a unified interface.</em></p>
 </div>
 
 ## 8. Demo Video
 
-[📺 Watch the AutoNav Dashboard in Action](https://drive.google.com/file/d/1lZGrZbl-ctJo8bHazvPJB8QvIiUIS8dV/view?usp=sharing)
+[📺 Watch the AutoNav Dashboard in Action](https://youtu.be/3mj0CoJ0H94)
 
 ## 9. Installation & Running
 
