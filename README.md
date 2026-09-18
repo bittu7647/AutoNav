@@ -31,7 +31,7 @@ The project is built on a high-performance decoupled architecture:
 
 <div align="center">
   
-  ![AutoNav System Architecture](docs/system_architecture.png)
+  ![AutoNav System Architecture](docs/system_architecture.jpeg)
 
   <p><em>End-to-end system architecture: From raw LiDAR input through Adaptive Foveated 2.5D Mapping to Path Planning & Navigation Control.</em></p>
 </div>
