@@ -88,7 +88,7 @@ const Dashboard = () => {
               <span className="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest">Semantic Point Cloud</span>
               <div className="w-full h-32 bg-black border border-[#1B1C1E] rounded overflow-hidden relative">
                 <img
-                  src="http://localhost:8000/model_outputs/autonomous_navigation_semantic_map.png"
+                  src={`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/model_outputs/autonomous_navigation_semantic_map.png`}
                   alt="LiDAR Point Cloud"
                   className="w-full h-full object-cover"
                   onError={(e) => { e.target.style.display = 'none'; }}

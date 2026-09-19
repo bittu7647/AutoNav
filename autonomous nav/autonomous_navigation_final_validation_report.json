@@ -1,0 +1,50 @@
+{
+  "project": "Autonomous Navigation",
+  "checkpoint": "/kaggle/working/autonomous_navigation_best_model.pt",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "model": {
+    "input_features": 4,
+    "output_classes": 3,
+    "training_points": 8192,
+    "parameters": 669763,
+    "validation_miou": 0.7626695409164687
+  },
+  "validation": {
+    "requested_frames": 10,
+    "successful_frames": 10,
+    "total_original_points": 347232,
+    "total_valid_points": 347185,
+    "total_skipped_points": 47,
+    "mean_inference_ms": 37.81490449982812,
+    "mean_frame_fps": 26.70956980941407,
+    "mean_points_per_second": 927338.6092012444,
+    "mean_confidence": 0.8656435668468475,
+    "min_confidence": 0.33888474106788635,
+    "max_confidence": 1.0,
+    "mean_adaptive_cells": 16465.3,
+    "mean_memory_reduction_percent": 99.89709187499999,
+    "single_class_frames": 0
+  },
+  "aggregate_class_distribution": {
+    "Terrain": {
+      "points": 131883,
+      "percentage": 37.98637613952216
+    },
+    "Static": {
+      "points": 71330,
+      "percentage": 20.54524244999064
+    },
+    "Dynamic": {
+      "points": 143972,
+      "percentage": 41.468381410487204
+    }
+  },
+  "sanity_checks": {
+    "checkpoint_loaded": true,
+    "model_parameters_loaded": true,
+    "all_frames_processed": true,
+    "multiple_classes_detected": true,
+    "confidence_reasonable": true
+  }
+}

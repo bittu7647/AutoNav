@@ -428,6 +428,12 @@ def get_stats():
     }
 
 
+@app.get("/api/health")
+def health_check():
+    """Health check endpoint for keep-alive pings (UptimeRobot)."""
+    return {"status": "ok", "service": "FoveaNav API"}
+
+
 # Serve sensor images as static files
 app.mount("/nuscenes", StaticFiles(directory=NUSCENES_DIR), name="nuscenes")
 # Serve model output images
@@ -436,4 +442,5 @@ app.mount("/model_outputs", StaticFiles(directory=MODEL_DIR), name="model_output
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)

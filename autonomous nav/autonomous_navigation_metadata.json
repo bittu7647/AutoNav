@@ -1,0 +1,56 @@
+{
+    "project": "Autonomous Navigation",
+    "model": {
+        "input_features": [
+            "X",
+            "Y",
+            "Z",
+            "Intensity"
+        ],
+        "num_classes": 3,
+        "classes": {
+            "0": "Terrain",
+            "1": "Static",
+            "2": "Dynamic"
+        },
+        "num_training_points": 8192,
+        "validation_miou_percent": 76.26695409164687,
+        "parameters": 669763
+    },
+    "input": {
+        "source": "nuScenes LiDAR",
+        "frame": "n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151603547590.pcd.bin",
+        "original_points": 34752,
+        "processed_points": 34742
+    },
+    "inference": {
+        "time_ms": 33.863865999592235,
+        "points_per_second": 1025931.2979923302,
+        "mean_confidence": 0.9211066365242004
+    },
+    "adaptive_2_5d": {
+        "cell_ranges": [
+            {
+                "range_m": "0-10",
+                "cell_size_m": 0.05
+            },
+            {
+                "range_m": "10-20",
+                "cell_size_m": 0.1
+            },
+            {
+                "range_m": "20-40",
+                "cell_size_m": 0.2
+            },
+            {
+                "range_m": "40-100",
+                "cell_size_m": 0.5
+            }
+        ],
+        "total_cells": 13623
+    },
+    "outputs": {
+        "map": "/kaggle/working/autonomous_navigation_outputs/autonomous_navigation_2_5d_map.npz",
+        "semantic_points": "/kaggle/working/autonomous_navigation_outputs/autonomous_navigation_semantic_points.npz"
+    }
+}

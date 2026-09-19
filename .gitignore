@@ -1,0 +1,13 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+
+# Large unused data (sweeps are not used by any endpoint)
+nuscenes_mini/sweeps/
