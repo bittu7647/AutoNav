@@ -7,6 +7,8 @@
     <img src="https://img.shields.io/badge/Performance-26.7_FPS-blue" alt="FPS" />
     <img src="https://img.shields.io/badge/Memory_Reduction-99.90%25-orange" alt="Memory" />
   </p>
+  
+  <h3><a href="https://auto-nav.vercel.app">🌐 View Live Demo Here</a></h3>
 </div>
 
 ---
@@ -65,9 +67,16 @@ The AutoNav engine delivers exceptional performance on mid-range hardware (Tesla
 
 [📺 Watch the AutoNav Dashboard in Action](https://youtu.be/3mj0CoJ0H94)
 
-## 9. Installation & Running
+## 9. Live Demo & Local Installation
 
-### Prerequisites
+### 🌐 Live Deployment
+The project is fully deployed and accessible online!
+- **Live Dashboard (Vercel):** [https://auto-nav.vercel.app](https://auto-nav.vercel.app)
+- **Backend API (Render):** `https://autonav-jvr8.onrender.com`
+
+---
+
+### Local Prerequisites
 - Python 3.10+, Node.js 18+
 - The **NuScenes Mini Dataset** placed in the `nuscenes_mini/` folder.
 
