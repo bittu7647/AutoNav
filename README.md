@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/Memory_Reduction-99.90%25-orange" alt="Memory" />
   </p>
   
-  <h3><a href="https://auto-nav.vercel.app">🌐 View Live Demo Here</a></h3>
+  <h3><a href="https://auto-nav.vercel.app">View Live Demo Here</a></h3>
 </div>
 
 ---
@@ -69,7 +69,7 @@ The AutoNav engine delivers exceptional performance on mid-range hardware (Tesla
 
 ## 9. Live Demo & Local Installation
 
-### 🌐 Live Deployment
+### Live Deployment
 The project is fully deployed and accessible online!
 - **Live Dashboard (Vercel):** [https://auto-nav.vercel.app](https://auto-nav.vercel.app)
 - **Backend API (Render):** `https://autonav-jvr8.onrender.com`
